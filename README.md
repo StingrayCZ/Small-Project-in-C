@@ -203,6 +203,9 @@ int main()
 }
 
 ```
+<p float="left">
+  <img src="/Folder/SecondTask.PNG" width="150" />
+</p>
 
 
 ## 3rd Task (return number of duplicate values)
