@@ -72,6 +72,132 @@ void divisibleThree(int *Num){
 }
 ```
 
+## 2nd Task (Objects)
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#define EMPTYLINE printf("\n");  // too lazy to type printf("\n") for several times
+
+// Object Plane
+struct Plane{
+    char manufacturer[30];     // e.g. COMAC, Boeing, Dessault, Piper, Cessna, Aero, etc.
+    char model[30];            // e.g. 225(Antonov), 747(Boeing) etc.
+    int speed;                 // km/h
+    int cargoLoad;             // Metric Ton (max weight of cargo)
+
+};
+
+
+// Object Box
+struct CargoBox{
+    int lengh;                  // cm
+    int width;                  // cm
+    int height;                 // cm
+    int mass;                   // Metric Ton
+};
+
+
+
+int main()
+{
+    struct Plane ChineseAircraft;
+    strcpy( ChineseAircraft.manufacturer, "Comac");
+    strcpy( ChineseAircraft.model, "C919");
+    ChineseAircraft.speed = 850;
+    ChineseAircraft.cargoLoad = 95;
+
+    struct Plane Dreamliner;
+    strcpy( Dreamliner.manufacturer, "Boeing");
+    strcpy( Dreamliner.model, "787");
+    Dreamliner.speed = 900;
+    Dreamliner.cargoLoad = 130;
+
+
+    struct CargoBox HeavyDutyBox;
+    HeavyDutyBox.lengh = 800;
+    HeavyDutyBox.width = 200;
+    HeavyDutyBox.height = 200;
+    HeavyDutyBox.mass = 30;
+
+
+    struct CargoBox SmallBox;
+    SmallBox.lengh = 200;
+    SmallBox.width = 150;
+    SmallBox.height = 120;
+    SmallBox.mass = 1;
+
+
+    printf("Which aircraft is able to carry a larger load?");
+    EMPTYLINE
+
+    if(ChineseAircraft.cargoLoad < Dreamliner.cargoLoad){
+
+        printf("%s %s", Dreamliner.manufacturer, Dreamliner.model);
+        EMPTYLINE
+    }
+    else{
+        printf("%s %s", ChineseAircraft.manufacturer, ChineseAircraft.model);
+        EMPTYLINE
+    }
+
+    EMPTYLINE
+
+    /*
+    **********************************************************************
+    */
+
+    // TEST of load capability of planes
+    int counter;
+
+    // Load Test of Dreamliner
+    printf("How many HeavyDutyBox is able to carry Dreamliner?");
+    EMPTYLINE
+
+
+    counter = 1;
+    int testedMass = HeavyDutyBox.mass;
+
+    while(testedMass < Dreamliner.cargoLoad){
+
+            testedMass += testedMass;
+            counter += 1;
+    }
+
+    printf("Plane %s can carry %d HeavyDutyBoxes.", Dreamliner.manufacturer, counter);
+    EMPTYLINE
+
+
+
+    /*
+    **********************************************************************
+    */
+    EMPTYLINE
+
+    // Load Test of Chinese plane
+    printf("How many HeavyDutyBox is able to carry Chinese plane?");
+    EMPTYLINE
+
+    counter = 1;
+    testedMass = HeavyDutyBox.mass;
+
+    while(testedMass < ChineseAircraft.cargoLoad){
+
+            testedMass += testedMass;
+            counter += 1;
+    }
+
+    printf("Plane %s can carry %d HeavyDutyBoxes.", ChineseAircraft.manufacturer, counter);
+    EMPTYLINE
+
+
+
+    return 0;
+
+}
+
+```
+
 
 ## 3rd Task (return number of duplicate values)
 
