@@ -62,6 +62,10 @@ void printArray(int pole[], int size)
 }
 
 ```
+<p float="left">
+  <img src="/Folder/ThirdTask.PNG" width="430" />
+</p>
+
 
 ```c
 #include <stdio.h>
