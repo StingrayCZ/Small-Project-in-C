@@ -63,7 +63,7 @@ void printArray(int pole[], int size)
 
 ```
 <p float="left">
-  <img src="/Folder/ThirdTask.PNG" width="430" />
+  <img src="/Folder/ThirdTask.PNG" width="750" />
 </p>
 
 
