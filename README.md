@@ -72,6 +72,12 @@ void divisibleThree(int *Num){
 }
 ```
 
+<p float="left">
+  <img src="/Folder/FirstTask1.PNG" width="450" />
+    <img src="/Folder/FirstTask2.PNG" width="450" />
+</p>
+
+
 ## 2nd Task (Objects)
 
 ```c
