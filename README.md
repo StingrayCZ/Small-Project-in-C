@@ -1,4 +1,4 @@
-# Task N.3
+# 3rd Task 
 
 ```c
 #include <stdio.h>
