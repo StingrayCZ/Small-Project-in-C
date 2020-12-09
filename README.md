@@ -1,4 +1,4 @@
-# 3rd Task 
+## 3rd Task (return number of duplicate values)
 
 ```c
 #include <stdio.h>
