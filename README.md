@@ -157,7 +157,7 @@ int main()
     int counter;
 
     // Load Test of Dreamliner
-    printf("How many HeavyDutyBox is able to carry Dreamliner?");
+    printf("How many HeavyDutyBox is the Dreamliner plane able to carry?");
     EMPTYLINE
 
 
@@ -181,7 +181,7 @@ int main()
     EMPTYLINE
 
     // Load Test of Chinese plane
-    printf("How many HeavyDutyBox is able to carry Chinese plane?");
+    printf("How many HeavyDutyBox is the Chinese plane able to carry?");
     EMPTYLINE
 
     counter = 1;
