@@ -204,7 +204,7 @@ int main()
 
 ```
 <p float="left">
-  <img src="/Folder/SecondTask.PNG" width="150" />
+  <img src="/Folder/SecondTask.PNG" width="750" />
 </p>
 
 
