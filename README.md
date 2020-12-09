@@ -1,3 +1,78 @@
+## 1st Task (return number of duplicate values)
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+#define HOP printf("\n");                  // hopping to next line
+
+int main()
+{
+
+    int a, b;
+
+    for(int i = 1; i <= 100; i++){
+
+//            printf("For number %i:", i);
+            a = divisibleTWO(&i);
+            b = divisibleThree(&i);
+
+            if(a == 0){                                // compare of returned values from divisibleTWO and divisibleTHREE apps
+                    if(b == 0){
+                        printf("TwoThree");
+                    }
+                    else{
+                        printf("Two");
+                    }
+
+            }
+            else if(b == 0){
+                printf("Three");
+            }
+            else{
+                printf("%d", i);
+            }
+             HOP
+    }
+
+
+    return 0;
+}
+
+
+void divisibleTWO(int *Num){
+
+    int num = *Num;
+
+    if(num%2 == 0){
+
+        return 1;                 // YES, number is divisible by 2
+    }
+
+    else{
+        return 0;                 // NOPE, number is divisible by 2
+    }
+
+}
+
+
+void divisibleThree(int *Num){
+
+    int num = *Num;
+
+    if(num%3 == 0){
+
+        return 1;                  // YES, number is divisible by 3
+    }
+
+    else{
+        return 0;                 // NOPE, number is divisible by 3
+    }
+
+}
+```
+
+
 ## 3rd Task (return number of duplicate values)
 
 ```c
